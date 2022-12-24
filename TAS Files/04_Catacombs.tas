@@ -1,0 +1,8 @@
+RecordCount: 1
+
+LoadSave 04_SaveGame.txt 1
+Load8 9 47.15 -11
+
+@Start
+ 368,J,T
+ 100,R

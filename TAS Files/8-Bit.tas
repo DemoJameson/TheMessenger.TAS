@@ -1,0 +1,12 @@
+RecordCount: 8
+
+LoadSave 00_SaveGame.txt 1
+
+@Start
+Read 00_Title
+   3
+Read 01_NinjaVillage Start
+ 137
+Read 02_AutumnHills Start
+ 137
+Read 03_ForlornTemple Start

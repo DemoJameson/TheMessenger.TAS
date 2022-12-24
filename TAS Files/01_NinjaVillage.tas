@@ -1,0 +1,49 @@
+RecordCount: 107
+
+LoadSave 01_SaveGame.txt 1
+Load8 6
+
+@Start
+AlwaysDropItem TimeShard
+ 500
+ 250,J,T
+  10,D
+ 138,J,T
+   5,R
+  10,R,J
+  30,R
+  50,R,J
+   1,R
+  50,R,J
+  75,R
+  50,R,J
+ 120,R
+  10,R,J
+  26,R
+  10,R,J
+  26,R
+  10,R,J
+ 100,R
+ 126,R,J,T
+  40,R
+  10,R,J
+   2,R,A
+  10,R,J
+ 135,R
+  37,R,J
+   2,R,A
+  50,R,J
+ 180,R
+  30,R,J
+   1,R
+  10,R,J
+ 150,R
+ 350,J,T
+  81,D
+ 180,R
+  10,R,J
+  30,R
+ 676,J,T
+   1,J,T
+ 782,J,T
+ 875,R

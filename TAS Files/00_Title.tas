@@ -1,0 +1,40 @@
+RecordCount: 81
+
+LoadSave 00_SaveGame.txt 1
+Load8 Intro
+
+@Start
+   1
+   1,P
+   1
+   1,P
+  91
+   1,J
+ 141
+   1,J
+  90
+   1,J
+  31
+Repeat 5
+   1,R
+   1
+EndRepeat
+   1,D
+   1
+   1,D,J
+Repeat 5
+   1,L
+   1
+EndRepeat
+   1,U
+   1
+   1,U,J
+Repeat 4
+   1,R
+   1
+EndRepeat
+   1,D
+   1
+   1,D,J,P
+   1,U
+   1,J

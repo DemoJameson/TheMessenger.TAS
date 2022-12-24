@@ -1,0 +1,21 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=D_003A_005CGame_005CSmol_0020Ame_005CSmol_0020Ame_005FData_005CManaged_005CUnity_002ETextMeshPro_002Edll/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=F_003A_005CSteam_005Csteamapps_005Ccommon_005CThe_0020Messenger_005CTheMessenger_002ETAS_005CTheMessenger_002ETAS_005CLibs_005CUnityEngine_002EUI_002Edll/@EntryIndexedValue">True</s:Boolean>
+	<s:String x:Key="/Default/Environment/AssemblyExplorer/XmlDocument/@EntryValue">&lt;AssemblyExplorer&gt;&#xD;
+  &lt;Assembly Path="D:\Games\Steam\steamapps\common\The Messenger\TheMessenger.TAS\TheMessenger.TAS\Libs\Rewired_Core.dll" /&gt;&#xD;
+  &lt;Assembly Path="D:\Games\Steam\steamapps\common\The Messenger\TheMessenger.TAS\TheMessenger.TAS\Libs\Assembly-CSharp-firstpass.dll" /&gt;&#xD;
+  &lt;Assembly Path="D:\Games\Steam\steamapps\common\The Messenger\TheMessenger.TAS\TheMessenger.TAS\obj\Debug\net35\publicized\Assembly-CSharp.dll" /&gt;&#xD;
+  &lt;Assembly Path="D:\Game\Smol Ame\Smol Ame_Data\Managed\Unity.TextMeshPro.dll" /&gt;&#xD;
+&lt;/AssemblyExplorer&gt;</s:String>
+	<s:String x:Key="/Default/Environment/Hierarchy/Build/BuildTool/CustomBuildToolPath/@EntryValue">C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\MSBuild.exe</s:String>
+	<s:Int64 x:Key="/Default/Environment/Hierarchy/Build/BuildTool/MsbuildVersion/@EntryValue">1114112</s:Int64>
+	<s:Boolean x:Key="/Default/UserDictionary/Words/=deactivators/@EntryIndexedValue">True</s:Boolean>
+	
+	
+	<s:Boolean x:Key="/Default/UserDictionary/Words/=Graplou/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/UserDictionary/Words/=Hitboxes/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/UserDictionary/Words/=Lightfoot/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/UserDictionary/Words/=Shuriken/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/UserDictionary/Words/=Tabi/@EntryIndexedValue">True</s:Boolean>
+	
+	</wpf:ResourceDictionary>

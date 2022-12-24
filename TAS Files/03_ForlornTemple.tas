@@ -1,0 +1,20 @@
+RecordCount: 33
+
+LoadSave 03_SaveGame.txt 1
+Load8 8 -17.13942 -11
+
+@Start
+  81
+ 150,R
+   1,R,J
+  50,R
+   1,R,J
+  30,R
+   1,R,J
+  20,R
+   9,R,J
+  28,R
+  53,R,J
+  12
+   1,D,J
+  52
