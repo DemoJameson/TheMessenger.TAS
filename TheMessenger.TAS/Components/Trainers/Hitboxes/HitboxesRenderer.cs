@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using TheMessenger.TAS.Components.Trainers.Cameras;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -50,6 +51,11 @@ public class HitboxesRenderer : MonoBehaviour {
     };
 
     private static float LineWidth => Mathf.Max(1, Screen.width / 960f);
+    private static Vector3? realCameraPosition;
+
+    static HitboxesRenderer() {
+        CameraController.OnCameraPositionChange += position => realCameraPosition = position;
+    }
 
     private void Start() {
         foreach (GameObject rootGameObject in SceneManager.GetActiveScene().GetRootGameObjects()) {
@@ -114,6 +120,12 @@ public class HitboxesRenderer : MonoBehaviour {
             return;
         }
 
+        Vector3? origCameraPosition = null;
+        if (realCameraPosition.HasValue) {
+            origCameraPosition = camera.transform.position;
+            camera.transform.position = realCameraPosition.Value;
+        }
+
         int origDepth = GUI.depth;
         float lineWidth = LineWidth;
         foreach (var pair in colliders) {
@@ -132,6 +144,11 @@ public class HitboxesRenderer : MonoBehaviour {
         }
 
         GUI.depth = origDepth;
+
+        if (origCameraPosition.HasValue) {
+            camera.transform.position = origCameraPosition.Value;
+            realCameraPosition = null;
+        }
     }
 
     private void DrawRopeDart(Camera camera, float lineWidth) {

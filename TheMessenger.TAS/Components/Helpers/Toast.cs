@@ -16,9 +16,9 @@ public class Toast : PluginComponent {
         padding = new RectOffset(25, 0, 0, 25),
     };
 
-    public static void Show(string text) {
+    public static void Show(object text) {
         instance.StopAllCoroutines();
-        instance.text = text;
+        instance.text = text.ToString();
         instance.StartCoroutine(ClearToast());
     }
 
