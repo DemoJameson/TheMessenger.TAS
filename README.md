@@ -81,11 +81,11 @@ Various commands exist to facilitate TAS playback. Command delimiters can be eit
 - Usually used before the `Load` command to restore the save file state
 
 #### Load and FastLoad
-- `Load8, SceneName/ScendBuildIndex`
-- `Load16, SceneName/ScendBuildIndex`
-- `Load8, SceneName/ScendBuildIndex, PositionX, PositionY`
-- `Load16, SceneName/ScendBuildIndex, PositionX, PositionY`
-- Load the specified scene and set player to the specified position.
+- `Load8/FastLoad8, SceneName/ScendBuildIndex`
+- `Load16/FastLoad16, SceneName/ScendBuildIndex`
+- `Load8/FastLoad8, SceneName/ScendBuildIndex, PositionX, PositionY`
+- `Load16/FastLoad16, SceneName/ScendBuildIndex, PositionX, PositionY`
+- Load the specified scene and set player to the specified position. `Load8` enters the 8bit dimension, while `Load16` is the 16bit dimension.
 - The `Load` command will completely reload the level, while `FastLoad` will not. If you have problems with `FastLoad`, try switching to the `Load` command.
 
 #### ExternalSpeed
