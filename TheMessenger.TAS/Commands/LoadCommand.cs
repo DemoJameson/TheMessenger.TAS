@@ -207,9 +207,9 @@ public class LoadCommand : PluginComponent {
                         progressionManager.checkpointSaveInfo.loadedLevelPlayerPosition = position.Value;
                     }
                 }
-
-                Manager<LevelManager>.instance?.LoadLevel(levelLoadingInfo);
             }
+
+            Manager<LevelManager>.instance?.LoadLevel(levelLoadingInfo);
         }
     }
 
