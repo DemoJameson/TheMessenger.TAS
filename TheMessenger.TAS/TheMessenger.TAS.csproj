@@ -3,7 +3,7 @@
     <PropertyGroup>
         <TargetFramework>net35</TargetFramework>
         <Description>TAS mod for The Messenger</Description>
-        <Version>1.2.0</Version>
+        <Version>1.2.1</Version>
         <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
         <LangVersion>default</LangVersion>
         <RestoreAdditionalProjectSources>
