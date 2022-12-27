@@ -109,7 +109,12 @@ Various commands exist to facilitate TAS playback. Command delimiters can be eit
 - Since spike damage boost depends on the update order of the spikes, it is rather random, you need to use this command to force the direction of the next knock back.
 
 #### TimeShard/HP/Mana
-- `TimeShard/HP/Mana, quantity`
+- `TimeShard/HP/Mana, Quantity`
+
+#### Inventory
+- `Inventory, ItemID, Quantity`
+- Available ItemID can be found here: https://github.com/DemoJameson/TheMessenger.TAS/blob/master/TheMessenger.TAS/Commands/InventoryCommand.cs#L118
+- If you want to know the ItemID of the item in the game, you can open the `BepInEx\LogOutput.log` file when you get the item and look for the log contains `Inventory`.
 
 #### RecordCount
 - e.g. `RecordCount: 1`
