@@ -1,6 +1,7 @@
-RecordCount: 1416
+RecordCount: 1420
 
 #Global Config
+FrameRate 50
 LoadSave 02_SaveGame.txt 1
 AlwaysDropItem TimeShard
 AlwaysRespawnBreakable True
@@ -246,7 +247,7 @@ Time: 00:20.180(1010)
    5
    1,U
  165,L
-   1,U
+   1,L,U
  127,J,T
    1
    1,J
@@ -493,7 +494,7 @@ EndRepeat
   80,L
    1,L,J
  129,L
-Time: 00:16.720(837)
+Time: 00:16.700(836)
 
 @Room11
   70,L

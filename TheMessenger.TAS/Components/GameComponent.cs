@@ -10,7 +10,7 @@ namespace TheMessenger.TAS.Components;
 public class GameComponent : PluginComponent, IGame {
     public static GameComponent Instance { get; private set; }
     public static int FixedFrameRate = DefaultFixedFrameRate;
-    public static int DefaultFixedFrameRate => 50;
+    public static int DefaultFixedFrameRate => 60;
     public string CurrentTime => GameInfoHelper.FormattedRoomTime;
     public float FastForwardSpeed => FastForward.DefaultSpeed;
     public float SlowForwardSpeed => 0.1f;
@@ -29,6 +29,7 @@ public class GameComponent : PluginComponent, IGame {
         Time.timeScale = Time.timeScale == 0 ? 0 : (float) newFrameRate / FixedFrameRate;
         Time.captureFramerate = newFrameRate;
         Application.targetFrameRate = newFrameRate;
+        Time.fixedDeltaTime = 1f / FixedFrameRate;
         Time.maximumDeltaTime = Time.fixedDeltaTime;
         QualitySettings.vSyncCount = 0;
     }

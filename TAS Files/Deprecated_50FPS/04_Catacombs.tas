@@ -1,5 +1,6 @@
 RecordCount: 1
 
+FrameRate 50
 LoadSave 04_SaveGame.txt 1
 Load8 9 47.15 -11
 

@@ -1,5 +1,6 @@
-RecordCount: 81
+RecordCount: 82
 
+FrameRate 50
 LoadSave 00_SaveGame.txt 1
 Load8 Intro
 

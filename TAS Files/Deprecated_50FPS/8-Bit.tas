@@ -1,5 +1,6 @@
 RecordCount: 8
 
+FrameRate 50
 LoadSave 00_SaveGame.txt 1
 
 @Start
