@@ -111,7 +111,11 @@ public class GameInfoHelper : PluginComponent {
                     }
 
                     if (player.CanAttack()) {
-                        statuses.Add("Attack");
+                        if (player.IsAttackCharged() && Manager<InventoryManager>.instance is {} manager && manager.GetItemQuantity(EItems.CHARGED_ATTACK) > 0) {
+                            statuses.Add("AttackCharged");
+                        } else {
+                            statuses.Add("Attack");
+                        }
                     }
 
                     if (player.graplou.CanThrow()) {
