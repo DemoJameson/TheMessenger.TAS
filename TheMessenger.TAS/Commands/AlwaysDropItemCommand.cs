@@ -13,6 +13,7 @@ public class AlwaysDropItemCommand {
         TimeShard,
         Mana,
         HP,
+        None,
     }
 
     private const string commandName = "AlwaysDropItem";
@@ -33,9 +34,14 @@ public class AlwaysDropItemCommand {
 
         foreach (ItemDropperData.ItemDropData data in __instance.itemDropData) {
             if (!data.itemToDrop) {
-                continue;
+                if (itemType == ItemType.None) {
+                    __result = data;
+                    return;
+                } else {
+                    continue;
+                }
             }
-            
+
             if (data.itemToDrop.name.Contains(itemType.ToString())) {
                 __result = data;
                 return;
