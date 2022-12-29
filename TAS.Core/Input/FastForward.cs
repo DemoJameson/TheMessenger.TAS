@@ -3,9 +3,9 @@ using System;
 namespace TAS.Core.Input;
 
 public class FastForward {
-    public const float DefaultSpeed = 100;
-    public const float MinSpeed = 1f / 50f;
-    public const float MaxSpeed = 100;
+    public const float DefaultSpeed = 10;
+    public const float MinSpeed = 1f / 60f;
+    public const float MaxSpeed = 10;
     public readonly int Frame;
     public readonly int Line;
     public readonly float Speed;
