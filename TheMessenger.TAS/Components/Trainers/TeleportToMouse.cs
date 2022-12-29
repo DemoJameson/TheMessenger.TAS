@@ -3,6 +3,7 @@ using UnityEngine;
 
 namespace TheMessenger.TAS.Components.Trainers;
 
+[PluginComponentPriority(-1)]
 public class TeleportToMouse : PluginComponent {
     private static ConfigEntry<KeyboardShortcut> teleportHotkey;
 
@@ -20,15 +21,15 @@ public class TeleportToMouse : PluginComponent {
         Cursor.lockState = CursorLockMode.None;
     }
 
-    private void PreRender(Camera cam) {
+    private void PreRender(Camera camera) {
         if (teleportHotkey.IsDownEx()) {
-            if (Manager<PlayerManager>.instance?.player is not { } player || Camera.main is not { } camera) {
+            if (Manager<PlayerManager>.instance?.player is not { } player || Camera.main != camera) {
                 return;
             }
 
             Vector3 mousePos = Input.mousePosition;
             mousePos.z = camera.nearClipPlane;
-            Vector3 worldPos = Camera.main.ScreenToWorldPoint(mousePos);
+            Vector3 worldPos = camera.ScreenToWorldPoint(mousePos);
             player.transform.position = worldPos;
             player.velocity = Vector2.zero;
         }
