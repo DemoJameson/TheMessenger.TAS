@@ -70,7 +70,8 @@ public class GameInfoHelper : PluginComponent {
                 infos.Add($"Speed: {(player.velocity).ToSimpleString(decimalsConfig.Value)}");
 
                 if (player.GetTotalExternalVelocity() != Vector2.zero) {
-                    infos.Add($"External: {(player.GetTotalExternalVelocity()).ToSimpleString(decimalsConfig.Value)} {player.externalVelocities.Keys.Join()}");
+                    infos.Add(
+                        $"External: {(player.GetTotalExternalVelocity()).ToSimpleString(decimalsConfig.Value)} {player.externalVelocities.Keys.Join()}");
                 }
 
                 lastPlayerPosition ??= position;
@@ -78,11 +79,14 @@ public class GameInfoHelper : PluginComponent {
                 lastPlayerPosition = position;
 
                 bool windmill = Manager<ProgressionManager>.instance?.useWindmillShuriken == true;
-                infos.Add($"HP: {player.currentHp}  Mana: {(windmill ? player.windmillCharge.ToString("F2") : playerManager.playerMana)}  TimeShard: {Manager<InventoryManager>.instance.GetItemQuantity(EItems.TIME_SHARD)}");
+                infos.Add(
+                    $"HP: {player.currentHp}  Mana: {(windmill ? player.windmillCharge.ToString("F2") : playerManager.playerMana)}  TimeShard: {Manager<InventoryManager>.instance.GetItemQuantity(EItems.TIME_SHARD)}");
 
-                // if (player.stateMachine.currentState is { } state) {
-                    // infos.Add($"State: {FormatState(state)}");
-                // }
+#if Debug
+                if (player.stateMachine.currentState is { } state) {
+                    infos.Add($"State: {FormatState(state)}");
+                }
+#endif
 
                 if (BossInfoHelper.GetInfo() is { } bossInfo) {
                     infos.Add(bossInfo);
@@ -111,7 +115,8 @@ public class GameInfoHelper : PluginComponent {
                     }
 
                     if (player.CanAttack()) {
-                        if (player.IsAttackCharged() && Manager<InventoryManager>.instance is {} manager && manager.GetItemQuantity(EItems.CHARGED_ATTACK) > 0) {
+                        if (player.IsAttackCharged() && Manager<InventoryManager>.instance is { } manager &&
+                            manager.GetItemQuantity(EItems.CHARGED_ATTACK) > 0) {
                             statuses.Add("AttackCharged");
                         } else {
                             statuses.Add("Attack");
@@ -122,7 +127,10 @@ public class GameInfoHelper : PluginComponent {
                         statuses.Add("Rope");
                     }
 
-                    if (player.stateMachine.currentState is PlayerDefaultState {allowWallJumpTolerance: false, wallJumpToleranceDelayCoroutine: null} && Manager<InventoryManager>.instance is {} inventoryManager && inventoryManager.GetItemQuantity(EItems.CLIMBING_CLAWS) > 0) {
+                    if (player.stateMachine.currentState is PlayerDefaultState {
+                            allowWallJumpTolerance: false, wallJumpToleranceDelayCoroutine: null
+                        } && Manager<InventoryManager>.instance is { } inventoryManager &&
+                        inventoryManager.GetItemQuantity(EItems.CLIMBING_CLAWS) > 0) {
                         statuses.Add("Unclimbed");
                     }
                 }
