@@ -134,6 +134,10 @@ public class LoadCommand : PluginComponent {
                         trigger.OnSpecialInteractionDone(sequence);
                     }
 
+                    if (FindObjectOfType<ShopChest>() is { } shopChest) {
+                        shopChest.OnInteractionDone();
+                    }
+
                     trigger.OnInteractionDone();
                 }
 
