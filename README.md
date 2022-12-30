@@ -116,6 +116,11 @@ Various commands exist to facilitate TAS playback. Command delimiters can be eit
 - Available ItemID can be found here: https://github.com/DemoJameson/TheMessenger.TAS/blob/master/TheMessenger.TAS/Commands/InventoryCommand.cs#L118
 - If you want to know the ItemID of the item in the game, you can open the `BepInEx\LogOutput.log` file when you get the item and look for the log contains `Inventory`.
 
+#### WindmillShuriken
+- `WindmillShuriken, True/False`
+- Equipped with or without windmill shuriken.
+
+
 #### RecordCount
 - e.g. `RecordCount: 1`
 - Every time you run tas after modifying the current input file, the record count auto increases by one.
@@ -127,7 +132,6 @@ Various commands exist to facilitate TAS playback. Command delimiters can be eit
 #### LevelTime
 - e.g. `LevelTime: 04:10.177(12509)`
 - The level time is automatically filled in when the command is run
-
 
 ## Playback of Input File
 ### Controller
