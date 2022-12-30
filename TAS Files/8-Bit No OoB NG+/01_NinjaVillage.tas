@@ -1,4 +1,4 @@
-RecordCount: 220
+RecordCount: 233
 
 LoadSave 01_SaveGame.txt 1
 Load8 6
@@ -33,13 +33,15 @@ AlwaysDropItem None
    8,R,G
    1,J
    3,R,J
-  25,R
-   1,R,J
-  38,R
-   1,R,J
- 101,R
+  13,R
+  54,R,J
+   1,R,G
+   4,R
+   1,J
+   3,R,J
+  86,R
  130
-  41,R,J,T
+  41,J,T
    1,R
   12,R,J
    3,R
@@ -107,5 +109,5 @@ AlwaysDropItem None
   11,R
   14,R,J
  752,R
-LevelTime: 01:34.706(5683)
+LevelTime: 01:34.639(5679)
    1,R
