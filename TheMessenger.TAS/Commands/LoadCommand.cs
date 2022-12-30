@@ -16,9 +16,9 @@ public class LoadCommand : PluginComponent {
         CommunicationServer.ReturnDataEvent += dataType => {
             if (dataType == "Load") {
                 EBits dimension = Manager<DimensionManager>.instance?.currentDimension ?? EBits.BITS_8;
-                string result = dimension == EBits.BITS_16 ? "FastLoad16" : "FastLoad8";
+                string result = dimension == EBits.BITS_16 ? "Load16" : "Load8";
                 result += $" {CurrentSceneIndex}";
-                if (Manager<PlayerManager>.instance is {player.transform.position: var position} playerManager) {
+                if (Manager<PlayerManager>.instance is {player.transform.position: var position}) {
                     result = $"{result} {position.x} {position.y}";
                     if (ExternalSpeedCommand.GenerateCommand() is { } externalCommand) {
                         result = $"{result}\n{externalCommand}";
