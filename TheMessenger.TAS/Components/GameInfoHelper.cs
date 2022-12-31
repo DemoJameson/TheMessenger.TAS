@@ -103,6 +103,11 @@ public class GameInfoHelper : PluginComponent {
                 } else if (player.paused || player.inputBlocked ||
                            Manager<InputManager>.instance is {blockAllInputs: true}) {
                     statuses.Add("NoControl");
+                }  else if (player.stateMachine.currentState is PlayerInWaterState state) {
+                    statuses.Add("Jump");
+                    if (state.CanDash()) {
+                        statuses.Add("Dash");
+                    }
                 } else {
                     if (player.CanJump()) {
                         statuses.Add("Jump");
