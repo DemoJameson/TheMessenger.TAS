@@ -1,0 +1,826 @@
+RecordCount: 627
+
+#Global Config
+LoadSave 01_SaveGame.txt 1
+AlwaysDropItem None
+HasClimbed True
+WindmillShuriken True
+
+#AH-01
+Load8 7 -304.7717 -72.99999
+HasClimbed False
+WindmillShuriken False
+Play AH-01
+
+#AH-02
+#Load8 7 -212.0348 -74.99992
+#WindmillShuriken False
+#  95
+#ExternalSpeed EnemyReceiveHit 0.01256615
+#Play AH-02
+
+#AH-02-End
+#Load8 7 -53.15724 -67
+#WindmillShuriken False
+#  95
+#ExternalSpeed EnemyReceiveHit 0.05364672
+#Play AH-02-End
+
+#AH-03-End
+#Load8 7 -22.82333 -83.00006
+#Play AH-03-End 95
+
+#AH-06-End
+#Load8 7 266.2267 -67.00001
+#Play AH-06-End 95
+
+#AH-13
+#Load8 7 299.9963 -68.99991
+#Play AH-13 95
+
+#AH-18
+#Load8 7 651.9507 -57
+#Play AH-18 95
+
+#AH-20
+#Load8 7 715.9515 -48.99994
+#Play AH-20 95
+
+#AH-21
+#Load8 7 747.9512 -58.99994
+#Play AH-21 95
+
+#AH-22
+#Load8 7 811.9639 -54.9999
+#  95
+#ExternalSpeed EnemyReceiveHit 0.03470891
+#Play AH-22
+
+#AH-25
+#Load8 7 907.917 -26.99991
+#Play AH-25 95
+
+@Start
+@AH-01
+  95
+ 273,R
+   1,R,J
+   1,R,G
+  14,R
+   1,J
+   3,R,J
+  20,R
+   1,R,J
+   4,R
+   1,R,G
+  17,R
+  15,R,J
+  33,R
+   1,R,J
+   6,R
+   1,R,A
+  80,R
+   1,R,A
+  16,R
+   1,R,G
+   2,R
+   1,R,J
+  14,R
+  15,R,J
+  14,R
+   2,L,A
+  85,R
+Time: 00:11.350(681)
+
+@AH-02
+  25,R
+  30,R,J,A
+   7,R
+   3,R,J
+   5,R,J,G
+  11,R
+  15,R,J
+  15,R
+   2,L,A
+   1,R
+   1,R,G
+  33,R
+   1,R,G
+  17,R
+  15,R,J
+  30,R
+   1,R,S
+  24,R
+   4,R,J
+   1,R,G
+  17,R
+   1,R,J
+  34,R
+   1,R,G
+  17,R
+  15,R,J
+  26,R
+   1,L,A
+   1,R
+   1,R,J
+   1,R,G
+  15,R
+   1,R,J
+  15,R
+   1,R,G
+  11,R
+   1,R,J
+  19,R
+   2,L,A
+  31,R,J
+   1,R,A
+  19,R,J
+  49,R
+   1,R,D,J,A
+  23,R
+   1,R,G
+   5,R
+   1,R,J
+  16,R
+   2,L,A
+   5,R,J
+  32,R
+   1,R,J
+   9,R
+  11,R,A
+   1,R,G
+  18,R
+  15,R,J
+   1,R,J,G
+   8,R,J
+   1,R
+  15,R,J
+  69,R
+   1,R,A
+   1,R,G
+  11,R
+   1,J
+   5,R,J
+   1,L,A
+   1,R
+   1,R,G
+  26,R
+   6,R,J
+   3,R
+   1,R,A
+   1,R,J
+  45,R
+@AH-02-End
+   1,R
+   8,R,J,G
+Time: 00:14.483(869)
+
+@AH-03
+   3,R,J
+  33,R
+   1,R,A
+   1,R,D,J
+  14,R
+  41
+   1,U
+ 106
+  16,L
+   1,L,U
+  17,J,T
+   1,D
+  17
+   1,J
+  24,R
+  69
+  14,R,J
+  16,R,G
+Repeat 4
+   4,R,J
+   9,J
+   1
+EndRepeat
+   1,L,J
+   1,J
+   7,R,J
+   6,R
+   1,R,G
+  16,R
+  53
+  11,R
+   1,R,G
+  12,R
+   1,L,J
+   1,J
+   6,R,J
+  15,R
+@AH-03-End
+  22,R,J
+Time: 00:04.617(278)
+
+@AH-04
+   6,R,J
+  38,R
+   1,R,G
+   5,R
+  15,R,J
+   7,R
+   1,R,J
+  37,R
+   1,R,G
+   3,R
+  15,R,J
+  85,R
+   1,R,J,G
+  15,R
+   1,J
+  17,R,J
+   2,R
+   1,R,G
+  17,R
+   1,R,J
+  34,R
+   1,L,A
+   1,R
+   3,R,J
+  13,R
+   1,R,G
+  26,R
+   5,R,J
+   1,R
+   1,R,A
+  18,R
+Time: 00:06.217(374)
+
+@AH-05
+  68,R
+  12,R,J,S
+  15,R
+  15,R,J,S
+   1,R
+  15,R,J
+   1,R
+  15,R,J
+   1,R
+  10,R,J
+   1,R
+   6,R,J
+   1,R,J,G
+   4,R,J
+  32,R
+  10,R,J
+   1,R
+   1,R,A
+  11,R
+Time: 00:03.667(220)
+
+@AH-06
+  12,R
+   1,R,D,J
+  80,R
+   1,R,A
+  44,R
+   1,R,G
+  15,R
+   1,J,A
+   4,R,J
+  18,R
+   1,R,J
+  35,R
+   1,R,G
+  15,R
+   3,R,J
+  15,R
+   1,R,G
+  17,R
+   1,R,J
+  19,R
+   2,L,A
+   1,R,J
+ 100,R
+  71,R,J
+  47
+  17,A
+   8
+#   4
+   1,L,A
+   3,R
+   1,R,G
+  18,R
+  15,R,J
+   6,R
+   1,R,G
+  45,R
+   1,R,J
+  60,R
+  11,R,J
+  18,R
+   1,R,G
+  82,R
+  10,R,J,A
+   1,R,G
+  66,R
+   1,R,J
+  17,R
+   1,R,A
+   8,R
+  12,R,J
+   1,R,G
+  17,R
+  15,R,J
+  29,R
+  12,R,J
+  16,R
+  25,R,J
+   6,R
+   1,R,A
+  12,R,J
+  53,R
+   2,L,A
+   1,R
+   1,R,G
+   1,R,J
+  13,R
+   1,J
+   4,R,J
+  18,R
+  11,R,J
+  19,R
+
+@AH-06-End
+  14,R,J
+Time: 00:19.700(1182)
+
+@AH-07
+  43,R,J
+  18
+  37,D
+
+@AH-08
+ 137,D
+  16,R,D
+  28,R,D,A
+   2,L,D
+  43,D
+
+@AH-09
+ 143,D
+   9,R,D
+  18,R,D,A
+   1,R,D
+  18,R,D,A
+   1,R,D
+  15,R,D,A
+   4,R
+   2,R,A
+
+@AH-10
+  16,R,A
+   1,R
+   5,R,A
+Repeat 6
+   1,R,J
+   1,R
+EndRepeat
+
+Repeat 8
+   1,L,J
+   1,L
+EndRepeat
+   1,L,J,A
+   8,L,J
+  14,L,D
+   4,L,J
+   9,J
+   1
+   1,L,J
+  10,R,J
+   1,R,J,G
+   2,R,J
+   5,R
+   1,R,J
+  15,R
+   1,R,G
+  17,R
+   1,R,J
+  25,R
+  18
+  13,L
+  18
+  20,R,D
+  18,R,A
+   1,R
+   8,R,A
+   1,L,J
+   1,L
+Repeat 93
+   1,J
+   1
+EndRepeat
+Repeat 21
+   1,L,J
+   1,L
+EndRepeat
+Repeat 4
+  18,L,A
+   1,L
+EndRepeat
+  18,L,D,A
+   1,L,D
+Time: 00:09.783(588)
+
+@AH-11
+  17,L,D,A
+   1,R,D
+  14,L,D
+  13,L,A
+
+Repeat 26
+   1,R,J
+   1,R
+EndRepeat
+Time: 00:01.617(97)
+
+@AH-12
+
+Repeat 2
+   1,L,J
+   1,L
+EndRepeat
+
+Repeat 13
+   1,J
+   1
+EndRepeat
+   2,R
+  12
+   1,L,J
+   1,J
+   1,R,J,G
+  60,R
+Time: 00:01.783(107)
+
+@AH-13
+  67,R
+   1,R,J,G
+   1,R,J
+  14,R
+  14,R,J
+  40,R
+   1,R,D,J
+  39,R,D
+  18,R,A
+   1,R
+  18,R,A
+   1,R
+   7,R,A
+Repeat 6
+   1,L,J
+   1,L
+EndRepeat 
+   1,R,J
+   1,R
+   1,R,J,A
+   1,R,J
+   1,R,J,A
+  20,R,J
+   1,R
+   5,R,J,A
+  20,R
+   1,R,J
+  20,R
+   1,R,A
+   5,R
+   1,R,J,S
+  32,R
+  11,R,A
+   6,R
+   5,R,J,S
+   1,R
+   4,R,J
+   1,R
+  13,R,J
+   1,R
+  21,R,J
+Time: 00:06.800(409)
+
+@AH-14
+   7,R,J
+   1,R
+  29,R,J
+   1,R
+  15,R,J
+   1,R,A,S
+   5,R
+   9,R,J
+   1,R
+  20,R,J
+   1,R
+  12,R,J
+Time: 00:01.700(102)
+
+@AH-15
+  18,R,J
+   1,R
+  14,R,J
+   2,R,J,A
+  50,R,J
+   2,R
+  30,R,J
+   1,R
+  40,R,J
+   2,R,J,A
+  20,R,J
+   2,R
+  20,R,J
+   1,R
+   1,R,J
+  20,R
+  15,R,J
+   2,R,J,A
+  95,R,J
+   2,R,J,A
+  20,R,J
+   2,R
+   1,R,J
+  20,R
+  25,R,J
+   2,R,J,A
+  80,R,J
+Time: 00:08.133(489)
+
+@AH-16
+   9,R,J
+   2,R
+  26,R,J
+   1,R
+   2,R,J,A
+  13,J
+   2
+   7,J
+   1,L,J
+   1,J,S
+  12,J
+   1,L
+  12,L,J,A
+   1,J
+   1,R
+  20,R,J
+   1,R
+   1,L,J
+  49,R
+   6,R,J
+   1,R,G
+  17,R
+  14,R,J
+  17,R
+   1,R,J,G
+   3,R,J
+Time: 00:03.683(221)
+
+@AH-17
+  14,R
+   1,R,A
+  57,R
+   1,R,G
+   9,R
+   1,J
+   3,R,J
+  56,R
+   1,R,G
+   3,R
+  14,R,J
+  48,R
+Time: 00:03.467(208)
+
+@AH-18
+  20,R,A
+  10,R,J
+   1,L,J,A
+   1,R
+   1,R,G
+  17,R
+  14,R,J
+  25,R
+   1,R,J,G
+   4,R,J
+  14,R
+   7,R,J
+   8,R
+   1,R,G
+  30,R
+   3,R,G
+Time: 00:02.617(157)
+
+@AH-19
+  12,R
+   1,J
+  12,R,J
+   1,R,A
+
+  16,R,J
+   1,R
+   1,R,J
+  10,L,J
+   2,J
+   1
+   1,L,J
+  12,R,J
+   1
+   1,L,J
+  36,R,J
+   1,R
+   1,R,J
+  10,R
+   2,R,J,A
+  17,R
+   1,R,J,G
+   4,R
+  42
+  10,L
+   1,L,G
+  15,L
+   1,D,J
+  17
+  23,R
+   1,R,G
+   8,R
+  14,R,J
+   2,R
+   1,R,G
+  13
+   1,J,A
+   7,R,J
+   1,R,S
+   1,R,J
+   1,R,S
+  11,R,J
+  21,R
+Time: 00:05.583(336)
+
+@AH-20
+  27,R
+   1,R,D,J
+  30,R
+   1,R,A
+  15,R,J
+  16,R,G
+   1,R,J
+  10,L,J
+   2,J
+   1
+   8,L,J
+   1,L
+   1,R,J
+   1,J
+   5,L,J
+   1,L,J,G
+   3,L,J
+  13,L
+   7,L,J
+   6,J
+   1
+   1,L,J
+  11,R,J
+   1,J
+   1
+   1,L,J
+   1,J
+   3,R,J
+  18,R
+
+   1,R,J
+  24,R
+   3,R,J,A
+  16,R
+   3,R,J
+ 125,R
+Time: 00:06.000(361)
+
+@AH-21
+  10,R
+   8,R,J
+   4,R,J,G
+  11,R
+   5,R,J
+   1,R
+  10,R,J
+   5,R,J,G
+  10,R
+   1,J
+   6,R,J
+  53,R
+  10,R,J
+  33,R
+   1,R,G
+  17,R
+  14,R,J
+  54,R
+   1,R,G
+   3,R
+   1,R,J
+  19,R
+   2,L,A
+  18,R,J
+   1,R,J,G
+   4,R,J
+  13,R
+  14,R,J
+  34,R
+Time: 00:06.050(364)
+
+@AH-22
+  40,R
+   1,R,J
+  52,R
+   1,R,J
+  27,R
+  25,R,J
+   5,R,J,G
+  11
+
+Repeat 7
+   4,R,J
+   9,J
+   1
+EndRepeat
+   1,L,J
+   8,R,J
+   2,R,J,G
+   4,R
+  14,R,J
+  16,R
+   1,R,J
+   5,R,G
+Time: 00:05.183(312)
+
+@AH-23
+  10,R
+   1,R,J
+  36,R
+   1,R,G
+  10,R
+   1,J
+   3,R,J
+  14,R
+  11,R,J,S
+  49,R
+   1,R,J
+  20,R
+   1,R,G
+  36,R
+Time: 00:03.233(194)
+
+@AH-24
+  14,R
+   4,R,J
+   5,R,J,G
+  13,R
+  14,R,J
+  39,R
+   5,R,J,G
+  12,R
+  14,R,J
+  52,R
+Time: 00:02.867(172)
+
+@AH-25
+   1,R
+ 681
+  50,R
+   1,R,G
+  15,R
+   1,R,J
+  20,R
+   1,R,A
+   1,R,S
+   1,R
+   1,R,S
+   1,R
+   1,R,S
+  10,R
+   1,R,A
+  15,R
+   1,D,A
+  15,D
+   1,D,A
+   8,D
+   7,J
+   1,A
+  15
+   1,A
+  15
+   1,A
+   1,R,G
+   3,R
+   1,R,J
+  16,R
+   2,L,A
+   8,R
+ 620
+  12,R
+Time: 00:25.483(1529)
+
+@AH-26
+ 261,R
+LevelTime: 02:52.485(10350)
+   1,R
