@@ -1,4 +1,4 @@
-RecordCount: 627
+RecordCount: 653
 
 #Global Config
 LoadSave 01_SaveGame.txt 1
@@ -301,7 +301,6 @@ Time: 00:03.667(220)
   47
   17,A
    8
-#   4
    1,L,A
    3,R
    1,R,G
@@ -476,7 +475,7 @@ Time: 00:01.783(107)
 Repeat 6
    1,L,J
    1,L
-EndRepeat 
+EndRepeat
    1,R,J
    1,R
    1,R,J,A
@@ -616,7 +615,6 @@ Time: 00:02.617(157)
    1,J
   12,R,J
    1,R,A
-
   16,R,J
    1,R
    1,R,J
@@ -676,8 +674,8 @@ Time: 00:05.583(336)
    1,L,J,G
    3,L,J
   13,L
-   7,L,J
-   6,J
+   8,L,J
+   5,J
    1
    1,L,J
   11,R,J
@@ -729,9 +727,13 @@ Time: 00:06.000(361)
 Time: 00:06.050(364)
 
 @AH-22
-  40,R
-   1,R,J
-  52,R
+   2,R
+   1,R,G
+  15,R
+   1,J
+   4,R,J
+  34,R
+   9,R
    1,R,J
   27,R
   25,R,J
@@ -751,7 +753,7 @@ EndRepeat
   16,R
    1,R,J
    5,R,G
-Time: 00:05.183(312)
+Time: 00:04.733(285)
 
 @AH-23
   10,R
@@ -822,5 +824,5 @@ Time: 00:25.483(1529)
 
 @AH-26
  261,R
-LevelTime: 02:52.485(10350)
+LevelTime: 02:52.035(10323)
    1,R
